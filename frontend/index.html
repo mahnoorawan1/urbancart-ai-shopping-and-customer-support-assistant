@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>UrbanCart AI Assistant</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <a href="analytics.html" class="analytics-fab" title="Analytics Dashboard">
+        📊 Analytics Dashboard
+    </a>
+
+    <div class="chat-container">
+
+        <!-- Header -->
+        <div class="chat-header">
+
+            <div class="brand">
+
+                <div class="logo">
+                    UC
+                </div>
+
+                <div>
+
+                    <h2>UrbanCart</h2>
+
+                    <p>Shopping Assistant</p>
+
+                </div>
+
+            </div>
+
+            <div class="status">
+                Online
+            </div>
+
+        </div>
+
+        <!-- Chat Body -->
+        <div class="chat-body" id="chatBody">
+
+            <div class="bot-message">
+
+                <h3>Welcome to UrbanCart</h3>
+
+                <p>
+                    I can help you discover products, track orders,
+                    process returns, answer questions,
+                    or connect you with our support team.
+                </p>
+
+            </div>
+
+            <!-- Quick Actions -->
+
+            <div class="quick-actions">
+
+                <button class="quick-btn">
+                    Recommend Products
+                </button>
+
+                <button class="quick-btn">
+                    Track Order
+                </button>
+
+                <button class="quick-btn">
+                    Return Item
+                </button>
+
+                <button class="quick-btn">
+                    FAQs
+                </button>
+
+                <button class="quick-btn">
+                    Contact Support
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+
+        <div class="chat-footer">
+
+            <input
+                type="text"
+                id="messageInput"
+                placeholder="Type your message..."
+            >
+
+            <button id="sendBtn">
+
+                Send
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

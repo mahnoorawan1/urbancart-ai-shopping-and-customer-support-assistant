@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>UrbanCart AI - Analytics Dashboard</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/analytics.css">
+</head>
+
+<body>
+
+    <a href="index.html" class="back-link">← Back to Chatbot</a>
+
+    <div class="dashboard">
+
+        <div class="dashboard-header">
+            <div class="brand">
+                <div class="logo">UC</div>
+                <div>
+                    <h1>UrbanCart AI</h1>
+                    <p>Analytics Dashboard</p>
+                </div>
+            </div>
+            <div class="status">Live</div>
+        </div>
+
+        <!-- KPI Cards -->
+        <div class="kpi-grid">
+
+            <div class="kpi-card">
+                <p class="kpi-label">Total Conversations</p>
+                <h2 class="kpi-value">1,248</h2>
+                <p class="kpi-trend up">▲ 12.4% this week</p>
+            </div>
+
+            <div class="kpi-card">
+                <p class="kpi-label">Orders Tracked</p>
+                <h2 class="kpi-value">412</h2>
+                <p class="kpi-trend up">▲ 8.1% this week</p>
+            </div>
+
+            <div class="kpi-card">
+                <p class="kpi-label">Returns Processed</p>
+                <h2 class="kpi-value">96</h2>
+                <p class="kpi-trend down">▼ 3.2% this week</p>
+            </div>
+
+            <div class="kpi-card">
+                <p class="kpi-label">Escalated to Human</p>
+                <h2 class="kpi-value">57</h2>
+                <p class="kpi-trend neutral">4.6% of chats</p>
+            </div>
+
+        </div>
+
+        <!-- Charts Row -->
+        <div class="charts-grid">
+
+            <div class="chart-card">
+                <h3>Support Category Breakdown</h3>
+
+                <div class="bar-chart">
+
+                    <div class="bar-row">
+                        <span class="bar-label">Order Tracking</span>
+                        <div class="bar-track"><div class="bar-fill" style="width:78%"></div></div>
+                        <span class="bar-value">412</span>
+                    </div>
+
+                    <div class="bar-row">
+                        <span class="bar-label">Recommendation</span>
+                        <div class="bar-track"><div class="bar-fill" style="width:64%"></div></div>
+                        <span class="bar-value">338</span>
+                    </div>
+
+                    <div class="bar-row">
+                        <span class="bar-label">FAQ</span>
+                        <div class="bar-track"><div class="bar-fill" style="width:52%"></div></div>
+                        <span class="bar-value">276</span>
+                    </div>
+
+                    <div class="bar-row">
+                        <span class="bar-label">Return Request</span>
+                        <div class="bar-track"><div class="bar-fill" style="width:18%"></div></div>
+                        <span class="bar-value">96</span>
+                    </div>
+
+                    <div class="bar-row">
+                        <span class="bar-label">Human Handoff</span>
+                        <div class="bar-track"><div class="bar-fill" style="width:11%"></div></div>
+                        <span class="bar-value">57</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="chart-card">
+                <h3>AI Resolution Status</h3>
+
+                <div class="donut-wrap">
+
+                    <div class="donut" style="background: conic-gradient(#2563EB 0% 88%, #F59E0B 88% 100%);">
+                        <div class="donut-hole">
+                            <span class="donut-main">88%</span>
+                            <span class="donut-sub">Resolved</span>
+                        </div>
+                    </div>
+
+                    <div class="donut-legend">
+                        <p><span class="dot" style="background:#2563EB"></span> Resolved — 88%</p>
+                        <p><span class="dot" style="background:#F59E0B"></span> Escalated — 12%</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Recent Activity Table -->
+        <div class="table-card">
+            <h3>Recent Activity</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Customer</th>
+                        <th>Category</th>
+                        <th>Status</th>
+                        <th>Escalated</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ali Khan</td>
+                        <td>Order Tracking</td>
+                        <td><span class="pill resolved">Resolved</span></td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>Sara Ahmed</td>
+                        <td>Order Tracking</td>
+                        <td><span class="pill resolved">Resolved</span></td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>Bilal</td>
+                        <td>Order Tracking</td>
+                        <td><span class="pill resolved">Resolved</span></td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>Unknown</td>
+                        <td>Human Handoff</td>
+                        <td><span class="pill escalated">Escalated</span></td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Mahnoor Awan</td>
+                        <td>Recommendation</td>
+                        <td><span class="pill resolved">Resolved</span></td>
+                        <td>No</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p class="static-note">Note: figures shown are illustrative sample data for UI demonstration.</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

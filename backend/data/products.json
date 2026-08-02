@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "Acer Nitro V15",
+    "category": "Laptop",
+    "price": 799,
+    "stock": 15,
+    "brand": "Acer",
+    "description": "Intel Core i7, 16GB RAM, RTX 4050"
+  },
+  {
+    "id": 2,
+    "name": "HP Pavilion 15",
+    "category": "Laptop",
+    "price": 699,
+    "stock": 12,
+    "brand": "HP",
+    "description": "Intel Core i5, 16GB RAM, 512GB SSD"
+  },
+  {
+    "id": 3,
+    "name": "Sony WH-CH720N",
+    "category": "Headphones",
+    "price": 129,
+    "stock": 25,
+    "brand": "Sony",
+    "description": "Wireless Noise Cancelling Headphones"
+  },
+  {
+    "id": 4,
+    "name": "Apple AirPods Pro",
+    "category": "Earbuds",
+    "price": 249,
+    "stock": 8,
+    "brand": "Apple",
+    "description": "Active Noise Cancellation"
+  },
+  {
+    "id": 5,
+    "name": "Logitech MX Master 3S",
+    "category": "Mouse",
+    "price": 99,
+    "stock": 30,
+    "brand": "Logitech",
+    "description": "Wireless Productivity Mouse"
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "store_name": "UrbanCart",
+  "shipping_policy": "Standard shipping takes 3-5 business days. Express shipping takes 1-2 business days.",
+  "return_policy": "Products can be returned within 30 days if unused and in original packaging.",
+  "payment_methods": [
+    "Visa",
+    "Mastercard",
+    "PayPal",
+    "Cash on Delivery"
+  ],
+  "support_email": "support@urbancart.com",
+  "support_phone": "+92-300-1234567"
+}

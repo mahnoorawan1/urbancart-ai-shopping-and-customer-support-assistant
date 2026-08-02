@@ -1,0 +1,41 @@
+[
+    {
+        "order_id": "ORD1001",
+        "customer_name": "Ali Khan",
+        "email": "ali@example.com",
+        "status": "Processing",
+        "tracking_number": null,
+        "estimated_delivery": "2026-08-06",
+        "items": [
+            "HP Pavilion 15"
+        ],
+        "return_eligible": false,
+        "return_deadline": null
+    },
+    {
+        "order_id": "ORD1002",
+        "customer_name": "Sara Ahmed",
+        "email": "sara@example.com",
+        "status": "Shipped",
+        "tracking_number": "PK123456789",
+        "estimated_delivery": "2026-08-03",
+        "items": [
+            "Acer Nitro V15"
+        ],
+        "return_eligible": true,
+        "return_deadline": "2026-08-20"
+    },
+    {
+        "order_id": "ORD1003",
+        "customer_name": "Bilal",
+        "email": "bilal@example.com",
+        "status": "Delivered",
+        "tracking_number": "PK987654321",
+        "estimated_delivery": "2026-07-30",
+        "items": [
+            "HP Pavilion 15"
+        ],
+        "return_eligible": true,
+        "return_deadline": "2026-08-15"
+    }
+]
