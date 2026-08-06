@@ -1,6 +1,7 @@
+import os
 import requests
 
-N8N_WEBHOOK = "https://mahnoor-1.app.n8n.cloud/webhook/urbancart-escalation"
+WEBHOOK_URL = os.getenv("N8N_WEBHOOK_URL")
 
 
 def log_to_crm(
@@ -26,7 +27,7 @@ def log_to_crm(
     try:
 
         response = requests.post(
-            N8N_WEBHOOK,
+            WEBHOOK_URL,
             json=payload,
             timeout=10
         )
