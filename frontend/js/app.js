@@ -3,6 +3,30 @@ const API_URL = "https://urbancart-ai-shopping-and-customer.onrender.com/chat";
 const chatBody = document.getElementById("chatBody");
 const messageInput = document.getElementById("messageInput");
 const sendBtn = document.getElementById("sendBtn");
+const themeToggle = document.getElementById("themeToggle");
+
+// ================================
+// Theme (Light / Dark)
+// Persisted in localStorage so it
+// survives a page reload.
+// ================================
+
+function applyTheme(theme) {
+    document.documentElement.setAttribute("data-theme", theme);
+    themeToggle.innerText = theme === "dark" ? "☀️" : "🌙";
+    localStorage.setItem("urbancart-theme", theme);
+}
+
+(function initTheme() {
+    const saved = localStorage.getItem("urbancart-theme");
+    const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+    applyTheme(saved || (prefersDark ? "dark" : "light"));
+})();
+
+themeToggle.addEventListener("click", () => {
+    const current = document.documentElement.getAttribute("data-theme");
+    applyTheme(current === "dark" ? "light" : "dark");
+});
 
 // ================================
 // Session ID
