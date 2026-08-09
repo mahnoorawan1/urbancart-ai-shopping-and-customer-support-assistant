@@ -5,16 +5,15 @@ from routes.chat import chat_bp
 
 app = Flask(__name__)
 
-# Allow requests from the deployed Vercel frontend
 CORS(
     app,
     resources={
-        r"/*": {
-            "origins": [
-                "https://urbancart-ai-assistant.vercel.app"
-            ]
+        r"/chat": {
+            "origins": "https://urbancart-ai-assistant.vercel.app"
         }
-    }
+    },
+    methods=["POST", "OPTIONS"],
+    allow_headers=["Content-Type"]
 )
 
 app.register_blueprint(chat_bp)
@@ -35,5 +34,5 @@ if __name__ == "__main__":
     app.run(
         host="0.0.0.0",
         port=port,
-        debug=False
+        debug=True
     )
